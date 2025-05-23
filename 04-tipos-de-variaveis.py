@@ -8,3 +8,11 @@ y = "Dez"
 
 print(type(x))
 print(type(y))
+
+#Mudando o tipo:
+
+x = str(10)
+x = 10
+
+print(type(x))
+print(type(y))
