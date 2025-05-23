@@ -1,11 +1,11 @@
 #Corrija o nome das variaveis abaixo seguindo as boas práticas
 
-userName = "Bob"
+user_name = "Bob"
 #Mudanca do valor da variavel acima
-userName = "Zorro"  
-nomeDoMeio = "Fernandes"
+user_name = "Zorro"  
+nome_do_meio = "Fernandes"
 
-print(userName)
-print(nomeDoMeio)
+print(user_name)
+print(nome_do_meio)
 
 

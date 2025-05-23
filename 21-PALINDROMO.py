@@ -7,19 +7,19 @@
 #
 
 def palidromo(f):
-    fraseInvertida = ""
+    frase_invertida = ""
     for v in reversed(f):
-        fraseInvertida += v
-    if(f == fraseInvertida):
+        frase_invertida += v
+    if(f == frase_invertida):
         print("Palavra Palindromo")
     else:
         print("Palavra nao Palindromo")
 
-fraseFiltrada = ""
+frase_filtrada = ""
 frase = str(input("Digite uma palavra: ")).lower()
 for caractere in frase:
     if caractere.isalpha():
-        fraseFiltrada += caractere
+        frase_filtrada += caractere
 
-palidromo(fraseFiltrada)
+palidromo(frase_filtrada)
 

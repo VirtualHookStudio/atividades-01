@@ -5,27 +5,27 @@
 
 meses = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-def calculoDias(diaNascimento, mesNascimento, anoNascimento, anoAtual, mesAtual, diaAtual):
+def calculoDias(dia_nascimento, mes_nascimento, ano_nascimento, ano_atual, mes_atual, dia_atual):
     count = 0
 
     # SOMA DOS DIAS DO ANO DE NACIMENTO
-    for i in range(mesNascimento - 1, 12):
-        if i == mesNascimento - 1:
-            count += meses[i] - diaNascimento
+    for i in range(mes_nascimento - 1, 12):
+        if i == mes_nascimento - 1:
+            count += meses[i] - dia_nascimento
         else:
             count += meses[i]
-    if anoBissexto(anoNascimento) and mesNascimento <= 2:
+    if anoBissexto(ano_nascimento) and mes_nascimento <= 2:
         count += 1
 
     #SOMA DOS DIAS DOS ANOS COMPLETOS ENTRE NASCIMENT E ANO ATUAL
-    for ano in range(anoNascimento + 1, anoAtual):
+    for ano in range(ano_nascimento + 1, ano_atual):
         count += 366 if anoBissexto(ano) else 365
 
     #SOMA OS DIAS DO ANO ATUAL
-    for i in range(mesAtual - 1):
+    for i in range(mes_atual - 1):
         count += meses[i]
     count += diaAtual
-    if anoBissexto(anoAtual) and mesAtual > 2:
+    if anoBissexto(ano_atual) and mes_atual > 2:
         count += 1
 
     print("Quantidade de dias que a pessoa tem: ", count)
