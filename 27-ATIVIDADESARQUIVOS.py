@@ -24,7 +24,7 @@ while archive == "":
     archive = str(input("Digite a extensao .txt | .csv | json: "))
     if  not archive  in [".txt", ".csv", ".json"]:
         archive = ""
-        print("Valor invealido!")
+        print("Valor invalido!")
 
 
 with open(f"./datas/data{archive}", choice, encoding="utf8") as archive_data:
